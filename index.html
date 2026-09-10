@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>GEO Hub · 全域内容营销中台</title>
+<meta name="description" content="选题·创作·合规·分发·复盘，一个人跑完全链路。面向内贸/海外双市场的 GEO 内容营销中台。">
+<style>
+  :root{
+    --blue:#2952E3; --purple:#7B4DE8; --teal:#0EA5B7; --green:#12A150;
+    --ink:#1C2333; --sub:#5A6478; --line:#E4E7EF; --bg:#F5F6FA; --card:#FFFFFF;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{font-family:"PingFang SC","Microsoft YaHei","Segoe UI",sans-serif;color:var(--ink);background:var(--bg);line-height:1.7;font-size:17px}
+  .wrap{max-width:1160px;margin:0 auto;padding:0 28px}
+  h2{font-size:34px;letter-spacing:-.5px;line-height:1.3}
+  .kicker{display:inline-block;font-size:14px;font-weight:700;color:var(--blue);background:#EAF0FF;border-radius:999px;padding:6px 16px;margin-bottom:14px}
+  section{padding:72px 0}
+
+  /* nav */
+  nav{position:sticky;top:0;background:rgba(255,255,255,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);z-index:9}
+  nav .wrap{display:flex;align-items:center;justify-content:space-between;height:62px}
+  .logo{display:flex;align-items:center;gap:10px;font-weight:800;font-size:18px}
+  .logo i{width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--blue),var(--purple));display:inline-block}
+  nav a{color:var(--sub);text-decoration:none;font-size:15px;margin-left:26px}
+  nav a:hover{color:var(--blue)}
+
+  /* hero */
+  .hero{padding:84px 0 60px;text-align:center}
+  .hero h1{font-size:52px;line-height:1.25;letter-spacing:-1px}
+  .hero h1 em{font-style:normal;background:linear-gradient(100deg,var(--blue),var(--purple));-webkit-background-clip:text;background-clip:text;color:transparent}
+  .hero p.lead{font-size:21px;color:var(--sub);margin:20px auto 0;max-width:720px}
+  .hero .tags{margin-top:26px;display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+  .hero .tags span{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:7px 18px;font-size:15px;color:var(--sub)}
+  .stats{margin-top:52px;background:var(--card);border:1px solid var(--line);border-radius:20px;padding:30px 20px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+  .stats div b{display:block;font-size:32px;color:var(--blue)}
+  .stats div span{font-size:14px;color:var(--sub)}
+
+  /* media blocks */
+  .media{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px;box-shadow:0 10px 34px rgba(28,35,51,.06)}
+  .media video,.media img{width:100%;border-radius:12px;display:block}
+  .cap{font-size:14px;color:var(--sub);text-align:center;margin-top:12px}
+
+  /* flow */
+  .flow{display:grid;grid-template-columns:repeat(7,1fr);gap:10px;margin-top:36px}
+  .flow .st{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 12px;text-align:center}
+  .flow .st b{display:block;font-size:18px}
+  .flow .st i{font-style:normal;font-size:12px;color:var(--blue);background:#EAF0FF;border-radius:999px;padding:2px 10px}
+  .flow .st span{font-size:13px;color:var(--sub);display:block;margin-top:6px;line-height:1.5}
+
+  /* features */
+  .grid2{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:38px}
+  .shot{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden}
+  .shot img{width:100%;display:block}
+  .shot .t{padding:18px 22px}
+  .shot .t b{font-size:19px}
+  .shot .t p{color:var(--sub);font-size:15px;margin-top:4px}
+
+  /* decisions */
+  .cards{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:38px}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:28px}
+  .card .ic{width:44px;height:44px;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:22px;margin-bottom:14px}
+  .card h3{font-size:20px;margin-bottom:8px}
+  .card p{color:var(--sub);font-size:15.5px}
+
+  /* tech */
+  .tech{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;margin-top:36px}
+  .tech .tk{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:24px}
+  .tech b{display:block;font-size:17px;margin-bottom:8px}
+  .tech span{color:var(--sub);font-size:14.5px}
+
+  footer{border-top:1px solid var(--line);padding:34px 0;color:var(--sub);font-size:14px;text-align:center}
+  footer a{color:var(--blue);text-decoration:none}
+  @media(max-width:900px){
+    .hero h1{font-size:36px}.stats{grid-template-columns:repeat(3,1fr)}
+    .flow{grid-template-columns:repeat(2,1fr)}.grid2,.cards{grid-template-columns:1fr}
+    .tech{grid-template-columns:repeat(2,1fr)}h2{font-size:27px}
+  }
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <div class="logo"><i></i>GEO Hub</div>
+  <div><a href="#demo">产品演示</a><a href="#flow">全链路</a><a href="#features">功能模块</a><a href="#design">设计决策</a><a href="#tech">技术架构</a></div>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="kicker">内贸 / 海外双市场 · GEO 内容营销中台</span>
+  <h1>选题 · 创作 · 合规 · 分发 · 复盘<br><em>一个人跑完全链路</em></h1>
+  <p class="lead">把被平台"罚出来"的实战经验固化成系统规则 —— 每一次内容生产都自带合规护栏，每一次分发都可跟踪、可复盘。</p>
+  <div class="tags"><span>🧭 GEO 生成式引擎优化</span><span>🛡 内置合规规则引擎</span><span>📡 5 大渠道矩阵</span><span>🤖 6 大 AI 引擎收录跟踪</span></div>
+  <div class="stats">
+    <div><b>13</b><span>功能模块</span></div>
+    <div><b>60+</b><span>REST API</span></div>
+    <div><b>24</b><span>数据表</span></div>
+    <div><b>16</b><span>内置合规规则</span></div>
+    <div><b>8.5k</b><span>代码行数</span></div>
+    <div><b>6</b><span>AI 引擎跟踪</span></div>
+  </div>
+</div></header>
+
+<section id="demo"><div class="wrap">
+  <span class="kicker">产品演示</span>
+  <h2>38 秒看完全流程</h2>
+  <div class="media" style="margin-top:32px">
+    <video src="assets/demo-tour.mp4" controls autoplay muted loop playsinline></video>
+    <div class="cap">工作台 → 品牌分析 → 知识库 → 创作 → 文章管理 → 发布 → 上词统计 → 月报</div>
+  </div>
+</div></section>
+
+<section id="flow" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <span class="kicker">GEO 全链路</span>
+  <h2>七个环节，一条闭环</h2>
+  <div class="flow">
+    <div class="st"><i>1</i><b>拓词</b><span>定好要被 AI 记住的词</span></div>
+    <div class="st"><i>2</i><b>定规则</b><span>学习平台收录规则</span></div>
+    <div class="st"><i>3</i><b>创作</b><span>词×指令×素材出稿</span></div>
+    <div class="st"><i>4</i><b>文章库</b><span>统一编辑与分发</span></div>
+    <div class="st"><i>5</i><b>发布</b><span>多渠道矩阵铺设</span></div>
+    <div class="st"><i>6</i><b>上词</b><span>看 AI 有没有引用</span></div>
+    <div class="st"><i>7</i><b>月报</b><span>月度效果复盘</span></div>
+  </div>
+</div></section>
+
+<section id="features"><div class="wrap">
+  <span class="kicker">功能模块</span>
+  <h2>核心界面</h2>
+  <div class="grid2">
+    <div class="shot"><img src="assets/screens/01-workbench.png" alt="工作台"><div class="t"><b>工作台</b><p>AI 引擎收录状态、发布与阅读趋势、热词排名一屏总览</p></div></div>
+    <div class="shot"><img src="assets/screens/11-publish.png" alt="发布管理"><div class="t"><b>发布管理</b><p>官网 / 甄选媒体 / 博客 / 海外论坛 / 垂直 B2B 五大渠道矩阵，收益点体系防刷量</p></div></div>
+    <div class="shot"><img src="assets/screens/10-articles.png" alt="文章管理"><div class="t"><b>文章管理</b><p>一稿多投不重复扣点，查看 · 编辑 · 分发 · 发布记录全流程操作</p></div></div>
+    <div class="shot"><img src="assets/screens/12-kwstats.png" alt="上词统计"><div class="t"><b>上词统计</b><p>关键词在 AI 引擎的收录与排名跟踪，GEO 效果量化</p></div></div>
+  </div>
+</div></section>
+
+<section id="design" style="background:#fff;border-top:1px solid var(--line);border-bottom:1px solid var(--line)"><div class="wrap">
+  <span class="kicker">设计决策</span>
+  <h2>不只是生成，而是带护栏的生产系统</h2>
+  <div class="cards">
+    <div class="card"><div class="ic" style="background:#FFF0F0">🛡</div><h3>合规护栏 = 系统规则</h3><p>P0/P1 分级规则引擎内置进创作流程。AI 生成声明、平台标识、来源规范在预检阶段拦截，而不是发布被删后才复盘。</p></div>
+    <div class="card"><div class="ic" style="background:#EAF0FF">📡</div><h3>渠道矩阵 + 收益点</h3><p>同一文章多渠道分发的收益点权重去重，原生生成与计算生成区分计费，机制上防止刷量。</p></div>
+    <div class="card"><div class="ic" style="background:#F1EDFF">🤖</div><h3>AI 引擎收录跟踪</h3><p>Google AIO / Gemini / Perplexity / Bing Copilot / ChatGPT 等引擎的收录状态与曝光趋势可视化 —— GEO 区别于 SEO 的核心指标。</p></div>
+    <div class="card"><div class="ic" style="background:#E9FAF3">🌏</div><h3>内贸 / 海外双市场</h3><p>同一套系统两种打法，区域级数据隔离，内贸 GEB 与海外 GEO 全链路各自独立。</p></div>
+  </div>
+</div></section>
+
+<section id="tech"><div class="wrap">
+  <span class="kicker">技术架构</span>
+  <h2>轻、快、可交付</h2>
+  <div class="tech">
+    <div class="tk"><b>Python · FastAPI</b><span>60+ REST 端点，规则引擎 / 分析引擎分层清晰</span></div>
+    <div class="tk"><b>SQLite · 24 张表</b><span>零运维数据层，Docker 化交付，启动自动播种演示数据</span></div>
+    <div class="tk"><b>原生 ES Modules</b><span>零框架前端，自研弹窗 / 图表 / 流程组件库</span></div>
+    <div class="tk"><b>文档处理</b><span>docx / pdf / pptx 知识库摄取，报告一键导出 Word</span></div>
+  </div>
+</div></section>
+
+<footer><div class="wrap">
+  GEO Hub · 全域内容营销中台 — 本站为产品展示，数据均为脱敏演示数据 ·
+  <a href="https://github.com/Huiran3733/geo-hub">GitHub 仓库</a>
+</div></footer>
+
+</body>
+</html>
