@@ -1,2 +1,5 @@
 *.webm
 palette.png
+_upload_hf.py
+_deploy_github.py
+_live_check.png
