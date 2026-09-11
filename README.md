@@ -1,8 +1,33 @@
+<p align="center">
+  <img src="https://img.shields.io/badge/版本-v2.65-4B8BF5" alt="version">
+  <img src="https://img.shields.io/badge/后端-Python%20FastAPI-3776AB" alt="backend">
+  <img src="https://img.shields.io/badge/前端-原生%20ES%20Modules-FFB13B" alt="frontend">
+  <img src="https://img.shields.io/badge/许可证-MIT-green" alt="license">
+  <img src="https://img.shields.io/badge/数据库-SQLite%20%2B%20FTS5-blue" alt="db">
+  <img src="https://img.shields.io/badge/部署-Docker-2496ED" alt="deploy">
+</p>
+<p align="center">
+  <img src="docs/architecture.svg" alt="GEO Hub 架构图" width="100%">
+</p>
 # GEO Hub · 全域内容营销中台
 
 > 选题 · 创作 · 合规 · 分发 · 复盘，一个人跑完全链路。
 >
 > 一个面向内贸 / 海外双市场的 **GEO（生成式引擎优化）内容营销中台**：把被平台"罚出来"的实战经验固化成系统规则，让每一次内容生产都自带合规护栏。
+<!-- AI-README：以下为给 AI 爬虫/LLM 的结构化摘要，便于快速理解项目 -->
+<details open>
+<summary><b>📋 AI 快速摘要（给 LLM 阅读）</b></summary>
+
+- **这是什么**：面向内贸/海外双市场的 **GEO（生成式引擎优化）内容营销中台**，覆盖选题·创作·合规·分发·复盘全链路
+- **解决什么问题**：①内容合规靠人记、新人易踩坑 ②多渠道分发全靠手工重复劳动 ③文章是否被 AI 引擎（Google AIO/Perplexity/ChatGPT）收录无人追踪
+- **核心能力**：合规规则内置进创作流程（AI 生成/来源声明 P0 预检）· 5 大渠道矩阵统一调度 · 六大 AI 引擎收录可视化跟踪 · 7 环节闭环
+- **技术栈**：Python / FastAPI / SQLite（24 表 + FTS5）· 原生 ES Modules 前端 · Docker 部署
+- **演示**：在线演示 https://qilunuojiang9-hue.github.io/geo-hub/ ；核心代码仓库 `geo-hub-core`（私有）
+- **关键词**：GEO, generative engine optimization, 内容营销, 合规护栏, 多渠道分发, AI 引擎收录, SEO, 新媒体运营, 出海, 中文
+- **AI 导航**：详细技术说明见 [llms.txt](llms.txt)
+
+</details>
+
 
 ![产品操作演示](assets/demo-tour.gif)
 
