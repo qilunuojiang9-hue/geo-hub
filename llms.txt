@@ -1,0 +1,49 @@
+# GEO Hub · 全域内容营销中台（产品展示）
+
+> AI 可读的项目导航（llms.txt 规范）。人类读者请看 [README.md](README.md)。
+
+## 项目一句话
+
+GEO Hub 是一个面向**内贸 / 海外双市场**的 **GEO（生成式引擎优化）内容营销中台**：把被平台「罚出来」的新媒体运营实战经验固化成系统规则，覆盖选题、创作、合规、分发、复盘全链路，让每一次内容生产都自带合规护栏。
+
+## 核心能力
+
+- **合规护栏是系统规则，不是制度文档**：内置 P0/P1/P2 分级规则引擎（如 `AI_DECLARE` P0 法律红线：AI 生成内容必须含 AI 生成声明并开启平台标识），创作阶段即预检，而非发布后被删才复盘
+- **渠道矩阵 + 收益点体系**：同一篇文章可分发到官网 / 甄选媒体 / 博客媒体 / 海外论坛 / 垂直 B2B 五大类渠道；原生/计算生成区分计费，同文多渠道不重复扣点，机制上防刷量
+- **AI 引擎收录跟踪**：直接展示 Google AIO、Google AIM、Gemini、Perplexity、Bing Copilot、ChatGPT 六大 AI 引擎的收录状态与曝光趋势——这是 GEO 区别于传统 SEO 的核心指标
+- **7 环节闭环**：拓词 → 定规则 → 创作 → 文章库 → 发布 → 上词 → 月报，每环节可独立使用、也可从任一环节直达
+- **内贸 / 海外双市场**：同一套系统两种打法，区域级数据隔离
+
+## 技术栈
+
+| 组件 | 技术 |
+|---|---|
+| 后端 | Python · FastAPI · SQLite（24 张表，含 FTS 检索）· 60+ REST 端点 |
+| 前端 | 原生 ES Modules + 自研轻量组件库（弹窗/图表/流程条），零框架依赖 |
+| 文档处理 | python-docx / PyPDF2 / python-pptx（多格式摄取，报告 Word 导出） |
+| 部署 | Docker 化交付，启动自动播种演示数据 |
+
+## 产品演示
+
+- 在线演示（静态展示）：https://qilunuojiang9-hue.github.io/geo-hub/
+- 核心代码仓库（私有）：https://github.com/qilunuojiang9-hue/geo-hub-core
+- 演示视频与截图见本仓库 `assets/`
+
+## 关键文件
+
+- [README.md](README.md) — 完整产品文档（为什么做 / 产品一览 / 全链路 / 设计决策 / 技术架构 / 工程量）
+- [docs/architecture.svg](docs/architecture.svg) — 架构图
+- `assets/screens/*.png` — 13 个功能模块截图
+- `assets/demo-tour.gif` / `demo-tour.mp4` — 产品操作演示
+
+## 典型使用场景
+
+1. **新媒体团队内容中台**：选题→创作→多渠道分发→收录跟踪一站式，新人也能避开平台风控
+2. **GEO / 生成式引擎优化**：跟踪品牌在 Google AIO、Perplexity、ChatGPT 等 AI 引擎的收录与排名
+3. **跨境内贸 + 出海双轨**：同一系统切换国内/海外规则视角，区域数据隔离
+4. **合规化内容生产**：把 AI 生成声明、来源声明、平台专属风控固化进系统，降低封号风险
+
+## 参考资源
+
+- [llms.txt 规范](https://llmstxt.org/)
+- [Anthropic 文档最佳实践](https://www.anthropic.com/news/writing-prompt-for-ai-docs)
