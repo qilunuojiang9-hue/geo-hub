@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 430" font-family="-apple-system, 'Segoe UI', 'Microsoft YaHei', sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="acc" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#4B8BF5"/>
+      <stop offset="100%" stop-color="#7B3FE4"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="900" height="430" rx="16" fill="url(#bg)"/>
+
+  <text x="450" y="38" text-anchor="middle" fill="#ffffff" font-size="22" font-weight="700">GEO Hub · 全域内容营销中台</text>
+  <text x="450" y="60" text-anchor="middle" fill="#94a3b8" font-size="13">Generative Engine Optimization · Content Marketing Platform</text>
+  <line x1="80" y1="74" x2="820" y2="74" stroke="url(#acc)" stroke-width="2" opacity="0.6"/>
+
+  <!-- 接入层 -->
+  <text x="34" y="100" fill="#4B8BF5" font-size="12" font-weight="600">接入层 · Entry</text>
+  <rect x="34" y="110" width="250" height="54" rx="10" fill="#1e3a5f" stroke="#4B8BF5" stroke-width="1.2"/>
+  <text x="159" y="134" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">前端驾驶舱</text>
+  <text x="159" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">13 功能模块 · 图表·弹窗·流程条</text>
+
+  <rect x="325" y="110" width="250" height="54" rx="10" fill="#1e3a5f" stroke="#4B8BF5" stroke-width="1.2"/>
+  <text x="450" y="134" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">发布渠道矩阵</text>
+  <text x="450" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">官网/媒体/博客/海外论坛/B2B</text>
+
+  <rect x="616" y="110" width="250" height="54" rx="10" fill="#1e3a5f" stroke="#4B8BF5" stroke-width="1.2"/>
+  <text x="741" y="134" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">AI 引擎看板</text>
+  <text x="741" y="152" text-anchor="middle" fill="#94a3b8" font-size="11">Google AIO·Perplexity·ChatGPT 收录</text>
+
+  <path d="M159 164 L159 188 L450 188 L450 198" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <path d="M450 164 L450 198" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+  <path d="M741 164 L741 188 L450 188" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+  <!-- 核心引擎 -->
+  <text x="34" y="222" fill="#7B3FE4" font-size="12" font-weight="600">核心引擎 · Engine</text>
+  <rect x="34" y="232" width="832" height="60" rx="10" fill="#2d1b4e" stroke="#7B3FE4" stroke-width="1.2"/>
+  <text x="450" y="256" text-anchor="middle" fill="#e2e8f0" font-size="13" font-weight="600">GEO Engine</text>
+  <text x="450" y="274" text-anchor="middle" fill="#94a3b8" font-size="11">规则引擎 P0–P2 · 分析引擎 · 创作引擎 · 收录跟踪 · 合规护栏（AI 生成/来源声明内置预检）</text>
+  <text x="450" y="288" text-anchor="middle" fill="#64748b" font-size="10">拓词 → 定规则 → 创作 → 文章库 → 发布 → 上词 → 月报（7 环节闭环）</text>
+
+  <path d="M450 292 L450 312" stroke="#64748b" stroke-width="1.5" fill="none" stroke-dasharray="4 3"/>
+
+  <!-- 数据层 -->
+  <text x="34" y="332" fill="#10b981" font-size="12" font-weight="600">数据层 · SQLite 24 张表（零运维，备份 = 拷文件）</text>
+  <rect x="28" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="94" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">文章库</text>
+  <rect x="172" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="238" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">企业知识库</text>
+  <rect x="316" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="382" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">提示词库</text>
+  <rect x="460" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="526" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">指令库</text>
+  <rect x="604" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="670" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">上词统计</text>
+  <rect x="748" y="342" width="132" height="46" rx="8" fill="#064e3b" stroke="#10b981" stroke-width="1.2"/>
+  <text x="814" y="369" text-anchor="middle" fill="#a7f3d0" font-size="11">月报</text>
+</svg>
